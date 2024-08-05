@@ -1,3 +1,8 @@
+<script>
+  import Footer from "$lib/Footer/footer.svelte";
+	import Header from "$lib/Header/Header.svelte";
+</script>  
+
 <style lang="postcss">
   @import '../app.css';
   :global(html) {
@@ -5,4 +10,8 @@
   }
 </style>
 
-<slot />
+<Header />
+<main class="">
+    <slot />
+</main>
+<Footer />
