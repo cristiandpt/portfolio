@@ -1,7 +1,3 @@
-<script lang="ts">
-  export const prerender = true;
-</script>
-
 <style lang="postcss">
   @import '../app.css';
   :global(html) {
