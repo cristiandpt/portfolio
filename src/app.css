@@ -8,3 +8,9 @@
     left: 0;
     right: 0;
 }
+
+.cp_carousel{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
