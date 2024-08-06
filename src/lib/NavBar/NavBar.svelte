@@ -19,7 +19,7 @@
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" class:hidden={!isOpen}>
           <div class="lg:flex-grow">
             <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Home</a>
-            <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Projects</a>
+            <a href="/projects" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Projects</a>
             <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">About</a>
             <a href="/contact" class="block mt-4 lg:inline-block lg:mt-0 text-white">Contact</a>
           </div>

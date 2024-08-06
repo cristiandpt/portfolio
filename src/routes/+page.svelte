@@ -1,6 +1,7 @@
 <script>
-	import SoftwareDeveloper from "$lib/Profession/SoftwareDeveloper.svelte";
+// @ts-nocheck
 
+	import SoftwareDeveloper from "$lib/Profession/SoftwareDeveloper.svelte";
  
 </script>
 
@@ -9,6 +10,8 @@
   <SoftwareDeveloper/>
 </div>
 <p>Visit <a href="https://github.com/cristiandpt">github repo</a> for my awesome works</p>
+
+
 <style lang="postcss">
     h1 {
         @apply font-sans;
