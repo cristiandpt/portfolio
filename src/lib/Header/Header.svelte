@@ -7,18 +7,22 @@
 </script>
 
 <div class="flex width-full dark:bg-gray-800 justify-between p-4">
-    <img src={logo} 
+    <a href="{base}/">
+        <img src={logo} 
          alt="logo" 
          class="icon"
      />
+    </a>
      <div class="flex items-center">
-        <Github color="white" size="2.0rem"/>
+        <a href="https://github.com/cristiandpt">
+            <Github class="fill-black dark:fill-white" size="2.0rem"/>
+        </a>     
         <NavBar />
      </div>
 </div>
 
 <style lang="postcss">
     .icon {
-        @apply w-20 h-auto;
+        @apply w-16 h-auto;
     }
 </style>
