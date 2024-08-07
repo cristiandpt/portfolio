@@ -27,7 +27,7 @@
 </style>
 
 <Header />
-<main class={`p-4 ${$theme}`}>
+<main class={`p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
     <slot />
 </main>
 <Footer />

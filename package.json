@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@lottiefiles/dotlottie-svelte": "^0.3.14",
 		"@sveltejs/adapter-static": "^3.0.2",
 		"svelte-images": "^0.0.95",
 		"svelte-light-carousel": "^1.0.5",
