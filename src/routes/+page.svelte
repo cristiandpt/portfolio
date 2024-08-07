@@ -3,6 +3,7 @@
 
 	import SoftwareDeveloper from "$lib/Profession/SoftwareDeveloper.svelte";
   import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
+  import { base } from '$app/paths';
   
 </script>
 
@@ -15,14 +16,14 @@
     <p>Visit my <a href="https://github.com/cristiandpt"><b>Github </b></a>repository for my awesome works</p>
   </div>
   <div class="flex justify-center z-1 relative">
-
-      <div class="absolute -top-40 left-0  h-[95vh] translate-x-1/4 z-[1000]">
-        <DotLottieSvelte
-        src="/animation.json"
+    <div class="absolute -top-40 left-0  h-[95vh] translate-x-1/4 z-[1000]">
+      <!-- The Credits to the lottie for  George KE: https://lottiefiles.com/18mbdcpbic-->
+      <DotLottieSvelte
+        src="{base}/animation.json"
         loop
         autoplay
         autoResizeCanvas={false}
-  />
+      />
     </div>
     
   </div>
