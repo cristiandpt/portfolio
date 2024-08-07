@@ -1,29 +1,58 @@
-<style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px;
+ <script>
+
+    import { base } from '$app/paths';
+	import { Images } from "$lib/svelte-images";
+    
+
+    const images = [
+      {
+        src: `${base}/main_dr_help_blured.png`
+      },
+      {
+        src: `${base}/main_dr_help_main_blured.png`
+      },
+      {
+        src: `${base}/scheduling.png`
+      },
+      {
+        src: `${base}/comments_appointment_blur.png`
+      },
+      {
+        src: `${base}/main_dr_help_covenios_blur.png`
+      },
+      {
+        src: `${base}/payment_dr_help_blur.png`
+      },
+      {
+        src: `${base}/videocall_dr_blur.png`
+    },
+    {
+        src: `${base}/lsita_medicos_dr_help_blured.png`
+    },
+    {
+        src: `${base}/exams_android.png`
+    },
+    {
+        src: `${base}/report_android.png`
+    },
+    {
+        src: `${base}/recommends_dr.png`
+    },
+    {
+        src: `${base}/edit_profile.png`
+    },
+    {
+        src: `${base}/main_new.png`
     }
+    ];
+  </script>
   
-    .grid-item {
-      background-color: #f2f2f2;
-      padding: 20px;
+  <style>
+    .gallery-container {
+      height: 75vh;
     }
   </style>
-
-  <script>
-    import { base } from '$app/paths';
-  </script>
-
-  <h1 class="text-3xl font-bold">Healt Care App</h1>
-  <div class="grid-container">
-    <div class="grid-item">lorem ipsum </div>
-    <div class="grid-item">
-        <img class="w-48" src="{base}/main_dr_help_blured.png" alt="logo"/>
-    </div>
-    <div class="grid-item">
-        <img class="w-48" src="{base}/main_dr_help_main_blured.png" alt="logo"/>
-    </div>
-    <div class="grid-item">Item 4</div>
+  
+  <div class="p-4 gallery-container mb-16">
+    <Images {images} numCols={5} />
   </div>

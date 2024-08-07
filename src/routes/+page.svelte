@@ -9,7 +9,7 @@
 <div>
   <SoftwareDeveloper/>
 </div>
-<p>Visit <a href="https://github.com/cristiandpt">github repo</a> for my awesome works</p>
+<p>Visit my <a href="https://github.com/cristiandpt"><b>Github </b></a>repository for my awesome works</p>
 
 
 <style lang="postcss">
