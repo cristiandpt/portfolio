@@ -1,8 +1,9 @@
 <script lang="ts">
     import NavBar from "$lib/NavBar/NavBar.svelte";
     import Github from "svelte-material-icons/Github.svelte";
+    import { base } from '$app/paths';
 
-    const logo = '/cd_logo_rect_p.svg'
+    const logo =  `${base}/cd_logo_rect_p.svg`;
 </script>
 
 <div class="flex width-full dark:bg-gray-800 justify-between p-4">

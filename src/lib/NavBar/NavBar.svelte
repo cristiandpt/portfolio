@@ -1,5 +1,6 @@
 <script lang="ts">
      import Menu from "svelte-material-icons/Menu.svelte";
+     import { base } from '$app/paths';
     let isOpen = false;
     
     function toggleMenu() {
@@ -18,10 +19,10 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" class:hidden={!isOpen}>
           <div class="lg:flex-grow">
-            <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Home</a>
-            <a href="/projects" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Projects</a>
-            <a href="/about" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">About</a>
-            <a href="/contact" class="block mt-4 lg:inline-block lg:mt-0 text-white">Contact</a>
+            <a href="{base}/" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Home</a>
+            <a href="{base}/projects" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">Projects</a>
+            <a href="{base}/about" class="block mt-4 lg:inline-block lg:mt-0 text-white mr-4">About</a>
+            <a href="{base}/contact" class="block mt-4 lg:inline-block lg:mt-0 text-white">Contact</a>
           </div>
         </div>
       </div>

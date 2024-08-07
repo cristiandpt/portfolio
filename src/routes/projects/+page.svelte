@@ -1,39 +1,43 @@
 <script>
 	import Card from '$lib/Card/Card.svelte';
     import Carousel from 'svelte-light-carousel';
+    import { base } from '$app/paths';
+
     const slides = [
         { 
-          url: "/android_logo.png", 
-          path: "/projects/android", 
+          url: `${base}/android_logo.png`, 
+          path: `${base}/projects/android`, 
         }, 
         { 
-          url: "/ios_logo.png", 
-          path: "/projects/ios" 
+          url: `${base}/ios_logo.png`, 
+          path: `${base}/projects/ios` 
         },
          { 
-            url: "/flutter_logo.png", 
-            path: "/projects/flutter" }, 
+            url: `${base}/flutter_logo.png`, 
+            path: `${base}/projects/flutter` 
+        }, 
          { 
-            url: "/ionic_logo.png", 
-            path: "/projects/ionic" 
+            url: `${base}/ionic_logo.png`, 
+            path: `${base}/projects/ionic` 
         },
         ]
 
     const slidesBackend = [
         { 
-          url: "/android_logo.png", 
-          path: "/projects/android", 
+          url: `${base}/android_logo.png`, 
+          path: `${base}/projects/android`, 
         }, 
         { 
-          url: "/ios_logo.png", 
-          path: "/projects/ios" 
+          url: `${base}/ios_logo.png`, 
+          path: `${base}/projects/io`, 
         },
          { 
-            url: "/flutter_logo.png", 
-            path: "/projects/flutter" }, 
+            url: `${base}/flutter_logo.png`, 
+            path: `${base}/projects/flutter`, 
+         },
          { 
-            url: "/ionic_logo.png", 
-            path: "/projects/ionic" 
+            url: `${base}/ionic_logo.png`, 
+            path: `${base}/projects/ioni`
         },
         ]
     

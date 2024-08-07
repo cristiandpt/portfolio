@@ -12,14 +12,18 @@
     }
   </style>
 
+  <script>
+    import { base } from '$app/paths';
+  </script>
+
   <h1 class="text-3xl font-bold">Healt Care App</h1>
   <div class="grid-container">
     <div class="grid-item">lorem ipsum </div>
     <div class="grid-item">
-        <img class="w-48" src="/main_flutter_blured.png" alt="logo"/>
+        <img class="w-48" src="{base}/main_flutter_blured.png" alt="logo"/>
     </div>
     <div class="grid-item">
-        <img class="w-48" src="/Result_measurement_flutter.png" alt="logo"/>
+        <img class="w-48" src="{base}/Result_measurement_flutter.png" alt="logo"/>
     </div>
     <div class="grid-item">Item 4</div>
   </div>
