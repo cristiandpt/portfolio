@@ -44,7 +44,7 @@
 </script>
 
 <p class="text-2xl font-bold">Mobile Development</p>
-<div class="flex width-full justify-center">
+<div class="flex width-full justify-center mt-8">
     <Carousel {slides} 
               autoPlay={2}
               layout={{
@@ -65,7 +65,7 @@
     </Carousel>
 </div>
 
-<p class="text-2xl font-bold">Backend Development</p>
+<p class="text-2xl font-bold mt-16">Backend Development</p>
 <div class="flex width-full justify-center">
     <Carousel {slidesBackend} 
               autoPlay={2}

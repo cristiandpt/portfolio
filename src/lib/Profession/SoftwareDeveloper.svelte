@@ -1,1 +1,1 @@
-<h1 class="text-3xl font-bold">Software Developer</h1>
+<h3 class="text-xl md:text-3xl font-bold">Software Developer</h3>
