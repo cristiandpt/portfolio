@@ -6,25 +6,25 @@
 <style>
     .card {
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         background-color: #fff;
         margin: 8px;
-        width: 160px;
+        width: 320px;
         height: 160px;
         cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    h2 {
-        margin: 0;
-    }
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.3);
+        
 
-    p {
-        color: #666;
+  animation: ripple 0.6s linear;
     }
 </style>
 
-<div class="card p-8 flex justify-center align-end">
-    <h2>{title}</h2>
-    <p>{subtitle}</p>
+<div class="card p-4 flex justify-start">
     <slot></slot>
 </div>
