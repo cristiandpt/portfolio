@@ -1,29 +1,41 @@
-<style>
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px;
-    }
+<script>
+    import { base } from '$app/paths';
+	import { Images } from "$lib/svelte-images";
+    
+
+    const images = [
+      {
+        src: `${base}/main_flutter_blured.png`
+      },
+      {
+        src: `${base}/Result_measurement_flutter.png`
+      },
+      {
+        src: `${base}/eclinic_presentation.png`
+      },
+      {
+        src: `${base}/kiosk_f.png`
+      },
+      {
+        src: `${base}/flutter_cali.png`
+      },
+      {
+        src: `${base}/accountt.png`
+      },
+      {
+        src: `${base}/specialitites.png`
+    },
+    {
+        src: `${base}/report_android.png`}
+    ];
+  </script>
   
-    .grid-item {
-      background-color: #f2f2f2;
-      padding: 20px;
+  <style>
+    .gallery-container {
+      height: 75vh;
     }
   </style>
-
-  <script>
-    import { base } from '$app/paths';
-  </script>
-
-  <h1 class="text-3xl font-bold">Healt Care App</h1>
-  <div class="grid-container">
-    <div class="grid-item">lorem ipsum </div>
-    <div class="grid-item">
-        <img class="w-48" src="{base}/main_flutter_blured.png" alt="logo"/>
-    </div>
-    <div class="grid-item">
-        <img class="w-48" src="{base}/Result_measurement_flutter.png" alt="logo"/>
-    </div>
-    <div class="grid-item">Item 4</div>
+  
+  <div class="p-4 gallery-container mb-16 flex justify-center content-center" >
+    <Images {images} numCols={5} />
   </div>

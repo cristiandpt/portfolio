@@ -21,19 +21,19 @@
           technologies: [`${base}/java_logo_1.png`, `${base}/android_logo_1.png`, `${base}/kotlin_logo.png`]
         },
          { 
-            url: `${base}/flutter_logo.png`, 
+            url: `${base}/eclinic.png`, 
             path: `${base}/projects/flutter`,
-            title: `${base}/projects/android`,
-            description: "",
-            technologies: ["android_logo_1", "kotlin_logo"] 
+            title: `eClinic`,
+            description: "Aplicación multiplataforma de telemedicina y monitoreo medico remoto. Se integra la conexión directa con dispositivos IoT.",
+            technologies: [`${base}/flutter_logo.png`] 
         }, 
-         { 
+        /*  { 
             url: `${base}/ionic_logo.png`, 
             path: `${base}/projects/ionic`,
             title: `${base}/projects/android`,
             description: "",
             technologies: ["android_logo_1", "kotlin_logo"] 
-        },
+        }, */
         ]
 
     const slidesBackend = [
