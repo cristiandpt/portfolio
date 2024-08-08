@@ -29,6 +29,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
+    /* justify-items: center; */
     /* height: 100%; */
   }
 

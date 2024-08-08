@@ -1,4 +1,4 @@
- <script>
+<script>
 
     import { base } from '$app/paths';
 	import { Images } from "$lib/svelte-images";
