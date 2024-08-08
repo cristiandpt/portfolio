@@ -6,11 +6,11 @@
     const logo =  `${base}/cd_logo_rect_p.svg`;
 </script>
 
-<div class="flex width-full dark:bg-gray-800 justify-between p-4">
+<div class="flex width-full dark:bg-gray-800 justify-between p-8">
     <a href="{base}/">
         <img src={logo} 
          alt="logo" 
-         class="icon"
+         class="icon md:ms-4"
      />
     </a>
      <div class="flex items-center">

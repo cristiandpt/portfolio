@@ -8,10 +8,10 @@
 </script>
 
 <div class="flex flex-col h-full">
-  <div class="flex flex-col justify-start z-0">
-    <h2 class="text-3xl md:text-5xl font-bold order-1">Cristian David Pacheco</h2>
+  <div class="flex flex-col justify-start z-0 md:ps-8">
+    <h2 class="text-3xl md:text-5xl font-bold order-1 ">Cristian David Pacheco</h2>
   </div>
-  <div class="order-3 md:order-2">  
+  <div class="order-3 md:order-2 md:ps-8">  
     <SoftwareDeveloper/>
     <p>Visit my <a href="https://github.com/cristiandpt"><b>Github </b></a>repository for my awesome works</p>
   </div>
