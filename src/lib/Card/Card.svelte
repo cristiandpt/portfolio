@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let title;
     export let subtitle;
 </script>
@@ -16,7 +16,7 @@
     }
 
     .card:hover {
-        transform: translateY(-10px);
+        transform: translateY(-3px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         background: rgba(255, 255, 255, 0.3);
         
