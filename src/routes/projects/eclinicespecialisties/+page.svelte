@@ -4,6 +4,7 @@
   import { base } from '$app/paths';
 </script>
 
+<!-- The creditt of the lottie animation: https://lottiefiles.com/  Free Building Page Animation -->
 <div class="mt-4 w-[320px] h-[320px] mx-auto">
   <DotLottieSvelte
   src="{base}/building.json"
