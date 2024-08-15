@@ -27,7 +27,7 @@
 </style>
 
 <Header />
-<main class={`p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
+<main class={`max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
     <slot />
 </main>
 <Footer />
