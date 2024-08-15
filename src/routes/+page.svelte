@@ -14,7 +14,6 @@
   let isTyping = false
   let displayElementsCounter = 0; 
   
-  
 
   $: {
     if (nameCharIndex < myInfo.name.length) {
@@ -58,11 +57,7 @@
     }
     }
   }
-  }
-
-
-
-  
+  }  
 </script>
 
 <div class="flex flex-col h-full">
@@ -73,7 +68,7 @@
       {/if}
     </h2>
   </div>
-  <div class=" order-3 md:order-2 md:ps-8">  
+  <div class=" order-3 md:order-2 md:ps-8 md:h-16">  
     <div class="flex flex-row">
       <SoftwareDeveloper profession={professionWriter}/>{#if (1 === displayElementsCounter || 2 === displayElementsCounter) }
       <span class={ (!isTyping ? 'input_cursor': '') + 'text-[1.5rem] md:text-3xl font-bold' }>|</span>  
