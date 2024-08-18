@@ -33,7 +33,7 @@
 </style>
 <div class="">
   <Header />
-  <main class={`h-screen max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
+  <main class={`h-[90vh] max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
     <slot />
   </main>
   <Footer />
