@@ -60,7 +60,14 @@
       <p class="h-auto py-4 w-[400px]">Las diferentes funciones principales de la aplicación móvil se disgregaron en modulos para permitir el enfoque del desarrollo y la reutilización, en aras de ajustarse a los principos SOLID</p>
     </div>
   </div>
-  <div class="p-4 gallery-container mb-16">
+  <div class="flex gap-16 mt-28">
+    <div class="flex flex-col align-center justify-center">
+      <h2 class="text-3xl font-bold">Arquitectura Clean</h2>
+      <p class="h-auto py-4 w-[400px]">Las diferentes funciones principales de la aplicación móvil se disgregaron en modulos para permitir el enfoque del desarrollo y la reutilización, en aras de ajustarse a los principos SOLID</p>
+    </div>
+    <img class="modules_clean w-[480px] h-auto" src={`${base}/clean_arch.png`} alt="logo" />
+  </div>
+  <div class="p-4 gallery-container mb-16 ">
     <h2 class="text-2xl font-bold mt-16">Gallery</h2>
     <Images {images} numCols={5} />
   </div>
