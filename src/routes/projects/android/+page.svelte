@@ -73,6 +73,7 @@
       class=""
       autoplay=""
       subframe=""
+      loop=""
       src="{base}/videocall_anim.json"
       style="width: 420px; height: 580px; margin-block-end: 12px;"
     > 
@@ -94,10 +95,26 @@
       subframe=""
       loop=""
       src="{base}/cached_anim.json"
-      style="width: 3800px; height: 380px; margin-block-end: 12px;"
+      style="width: 380px; height: 380px; margin-block-end: 12px;"
     > 
    </dotlottie-player> 
   </div>
+  
+  <div class="flex gap-16 mt-8">
+      <div class="flex flex-col align-center justify-center">
+        <h2 class="text-3xl font-bold">Pasarela de pagos</h2>
+        <p class="h-auto py-4 w-[400px]">Implementación del SDK de epayco y Payu para el pago electronico de los diferentes servicios ofrecidos por la app, además del recarga de la billetera virtual.</p>
+      </div>
+      <dotlottie-player
+        class=""
+        autoplay=""
+        subframe=""
+        loop=""
+        src="{base}/payment_anim.json"
+        style="width: 480px; height: 380px; margin-block-end: 12px;"
+      > 
+     </dotlottie-player>
+    </div>
   
   <div class="p-4 gallery-container mb-16 ">
     <h2 class="text-2xl font-bold mt-16 mb-8">Gallery</h2>
