@@ -101,10 +101,6 @@
   </div>
   
   <div class="flex gap-16 mt-8">
-      <div class="flex flex-col align-center justify-center">
-        <h2 class="text-3xl font-bold">Pasarela de pagos</h2>
-        <p class="h-auto py-4 w-[400px]">Implementación del SDK de epayco y Payu para el pago electronico de los diferentes servicios ofrecidos por la app, además del recarga de la billetera virtual.</p>
-      </div>
       <dotlottie-player
         class=""
         autoplay=""
@@ -113,7 +109,25 @@
         src="{base}/payment_anim.json"
         style="width: 480px; height: 380px; margin-block-end: 12px;"
       > 
-     </dotlottie-player>
+      </dotlottie-player>
+      <div class="flex flex-col align-center justify-center">
+        <h2 class="text-3xl font-bold">Pasarela de pagos</h2>
+        <p class="h-auto py-4 w-[400px]">Implementación del SDK de epayco y Payu para el pago electronico de los diferentes servicios ofrecidos por la app, además del recarga de la billetera virtual.</p>
+      </div>
+    </div>
+
+    <div class="flex gap-16 mt-16">
+      <div class="flex flex-col align-center justify-center">
+        <h2 class="text-3xl font-bold">Programación reactiva</h2>
+        <p class="h-auto py-4 w-[400px]">Se implementó el patrón Observable-Observador mediante la librería RxJava, y luego Coroutines y Flow, para la subscrición a eventos de UI, la petición exterior de datos y el cambio de estado de la aplicación con respecto al almacenamiento local.</p>
+      </div>
+      <div class="flex flex-row align-center justify-center"> 
+        <img src="{base}/rxjavacorountines_trans.png" class="w-24 h-16 self-end translate-x-[95px]" alt="logo" />
+        <img src="{base}/reactive_model_trans.png" 
+          class="w-[420px] h-auto"
+          alt="logo" />
+      </div>
+      
     </div>
   
   <div class="p-4 gallery-container mb-16 ">
