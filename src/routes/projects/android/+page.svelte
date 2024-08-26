@@ -164,7 +164,7 @@
       </div>
       <div class="flex flex-col align-center justify-center ps-24">
         <h2 class="text-3xl font-bold">Testing</h2>
-        <p class="h-auto py-4 w-[400px]">Separación de responsabilidades entre la vista; el controlador, que despacha eventos a capas profundas y expone data a subscribir en la vista; y el modelo, que ejecuta la lógica de negocio.</p>
+        <p class="h-auto py-4 w-[400px]">Se sigue la pirámide de pruebas, donde mayorees son las pruebas unitarias. Pruebas con JUnit, Mockito para pruebas de integración, Faker para generación de datos y espresso para la pruebas de interacción.</p>
       </div>
     </div>
   
