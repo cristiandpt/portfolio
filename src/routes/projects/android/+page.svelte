@@ -53,6 +53,14 @@
     }
   </style>
   <div class="mx-auto max-w-[1020px]">
+
+  <div class="flex gap-16 mb-12">    
+      <div class="flex flex-col align-center justify-center">
+        <h1 class="text-5xl font-bold">eHealth</h1>
+        <h2 class="text-3xl font-bold mt-8">Descripción</h2>
+        <p class="h-auto py-4">Aplicación de telemedicina con servicios de videoconsultas médicas con diferentes especialidades, agendaminetos de citas presenciales, compra y gestión de examenes médicos, compra de medicamentos y convenios con entidades farmaceúticas y visualización, y seguimiento de medidas de signos de salud y condiciones vitales que se enviaban por telemetría. </p>
+      </div>
+    </div>    
   <div class="flex gap-16">
     <img class="modules_clean w-[480px] h-auto" src={`${base}/modules.svg`} alt="logo" />
     <div class="flex flex-col align-center justify-center">
@@ -164,12 +172,13 @@
       </div>
       <div class="flex flex-col align-center justify-center ps-24">
         <h2 class="text-3xl font-bold">Testing</h2>
-        <p class="h-auto py-4 w-[400px]">Se sigue la pirámide de pruebas, donde mayorees son las pruebas unitarias. Pruebas con JUnit, Mockito para pruebas de integración, Faker para generación de datos y espresso para la pruebas de interacción.</p>
+        <p class="h-auto py-4 w-[400px]">Se sigue la pirámide de pruebas, donde mayores son las pruebas unitarias. Pruebas con JUnit, Mockito para pruebas de integración, Faker para generación de datos y espresso para la pruebas de interacción.</p>
       </div>
     </div>
   
-  <div class="p-4 gallery-container mb-16 ">
-    <h2 class="text-2xl font-bold mt-16 mb-8">Gallery</h2>
+  <div class="p-4 gallery-container pb-32">
+    <h2 class="text-2xl font-bold mt-16 mb-4">Gallery</h2>
+    <p class="h-auto py-4 mb-4">A continuación, se presenta screenshots de las diferentes sesiones y flujos dentro de la app:</p>
     <Images {images} numCols={5} />
   </div>
 </div>
