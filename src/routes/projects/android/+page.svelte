@@ -2,6 +2,7 @@
 
   import { base } from '$app/paths';
 	import CleanArch from '$lib/CleanArch/CleanArch.svelte';
+	import ModulingArch from '$lib/ModulingArch/ModulingArch.svelte';
 	import PaymentFeature from '$lib/PaymentFeature/PaymentFeature.svelte';
 	import { Images } from "$lib/svelte-images";
   import '@aarsteinmedia/dotlottie-player';  
@@ -63,14 +64,7 @@
         <p class="h-auto py-4">Aplicación de telemedicina con servicios de videoconsultas médicas con diferentes especialidades, agendaminetos de citas presenciales, compra y gestión de examenes médicos, compra de medicamentos y convenios con entidades farmaceúticas y visualización, y seguimiento de medidas de signos de salud y condiciones vitales que se enviaban por telemetría. </p>
       </div>
     </div>    
-  <div class="flex gap-16">
-    <img class="modules_clean w-[480px] h-auto" src={`${base}/modules.svg`} alt="logo" />
-    <div class="flex flex-col align-center justify-center">
-      <h2 class="text-3xl font-bold">Arquitectura Modular</h2>
-      <p class="h-auto py-4 w-[400px]">Las diferentes funciones principales de la aplicación móvil se disgregaron en modulos para permitir el enfoque del desarrollo y la reutilización. Para mannejar las dependencias e desacoplar el código se usó ls biblioteca <b>Dagger</b> como injector de dependencias.</p>
-    </div>
-  </div>
-  
+  <ModulingArch />
   <CleanArch />
 
   <div class="flex gap-16 mt-0">
