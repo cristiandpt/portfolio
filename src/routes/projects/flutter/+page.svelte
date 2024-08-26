@@ -1,6 +1,7 @@
 <script>
     import { base } from '$app/paths';
 	import CleanArch from '$lib/CleanArch/CleanArch.svelte';
+	import FirebaseServices from '$lib/FirebaseServices/FirebaseServices.svelte';
 	import ModulingArch from '$lib/ModulingArch/ModulingArch.svelte';
 	import PaymentFeature from '$lib/PaymentFeature/PaymentFeature.svelte';
 	import { Images } from "$lib/svelte-images";
@@ -43,6 +44,7 @@
   <CleanArch />
   <ModulingArch />
   <PaymentFeature />
+  <FirebaseServices /> 
 </div>
 
   <div class="p-4 gallery-container mb-16 flex justify-center content-center" >

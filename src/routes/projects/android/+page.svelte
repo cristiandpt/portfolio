@@ -2,6 +2,7 @@
 
   import { base } from '$app/paths';
 	import CleanArch from '$lib/CleanArch/CleanArch.svelte';
+	import FirebaseServices from '$lib/FirebaseServices/FirebaseServices.svelte';
 	import ModulingArch from '$lib/ModulingArch/ModulingArch.svelte';
 	import PaymentFeature from '$lib/PaymentFeature/PaymentFeature.svelte';
 	import { Images } from "$lib/svelte-images";
@@ -129,17 +130,7 @@
       </div>
     </div>
 
-    <div class="flex gap-16 mt-32">
-      <div class="flex flex-col align-center justify-center">
-        <h2 class="text-3xl font-bold">Autenticación a través <br/> servicios de Firebase</h2>
-        <p class="h-auto py-4 w-[400px]">Implementación de la autenticación de Firebase para el registro y acceso de usuarios a la app mediante proveedores de autenticación como Google, Facebook y Twitter.</p>
-      </div>
-      <div class="flex flex-row align-center justify-center gap-4 ps-16"> 
-        <img src="{base}/firebase_services.svg" 
-          class="w-[480px]" 
-          alt="logo" />
-      </div>
-    </div>
+    <FirebaseServices />
 
     <div class="flex gap-16 mt-4">
       <div class="flex flex-row align-center justify-center gap-4 ps-16"> 
