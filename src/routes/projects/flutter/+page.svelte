@@ -1,5 +1,7 @@
 <script>
     import { base } from '$app/paths';
+	import CleanArch from '$lib/CleanArch/CleanArch.svelte';
+	import PaymentFeature from '$lib/PaymentFeature/PaymentFeature.svelte';
 	import { Images } from "$lib/svelte-images";
     
 
@@ -35,7 +37,10 @@
       height: 75vh;
     }
   </style>
-  
+
+  <CleanArch />
+  <PaymentFeature />
+
   <div class="p-4 gallery-container mb-16 flex justify-center content-center" >
     <Images {images} numCols={5} />
   </div>
