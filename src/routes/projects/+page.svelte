@@ -45,7 +45,7 @@
             },
             {
                 url: `${base}/nodejs_icon.png`,
-                path: `${base}/projects/vidrossol`,
+                path: `${base}/projects/vidriossol`,
                 title: "VidriosSol",
                 description: "Backend de aplicación para venta de marqueteria a medida con visualizacion del diseño en 3D.",
                 technologies: []

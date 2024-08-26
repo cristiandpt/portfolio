@@ -1,8 +1,7 @@
-
-<script>
+<script lang="ts">
     import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
     import { base } from '$app/paths';
-</script>
+</script>    
 
 <div class="mt-4 w-[320px] h-[320px] mx-auto">
     <DotLottieSvelte
@@ -14,4 +13,5 @@
 <div class="mt-4 w-[320px] h-[320px] mx-auto font-bold text-center">
   I'm building this site rigth now. Be patient.
 </div>
+
 </div>
