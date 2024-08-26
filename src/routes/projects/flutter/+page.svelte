@@ -5,6 +5,7 @@
 	import ModulingArch from '$lib/ModulingArch/ModulingArch.svelte';
 	import PaymentFeature from '$lib/PaymentFeature/PaymentFeature.svelte';
 	import { Images } from "$lib/svelte-images";
+	import VideoCallTwilio from '$lib/VideoCallTwilio/VideoCallTwilio.svelte';
     
 
     const images = [
@@ -42,9 +43,12 @@
 
 <div class="mx-auto max-w-[1020px]">
   <CleanArch />
+  <VideoCallTwilio /> 
   <ModulingArch />
+  <FirebaseServices />
+  
   <PaymentFeature />
-  <FirebaseServices /> 
+  
 </div>
 
   <div class="p-4 gallery-container mb-16 flex justify-center content-center" >
