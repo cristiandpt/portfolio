@@ -1,14 +1,6 @@
-
 <script>
-    import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
-    import { base } from '$app/paths';
+	import BuildingSite from '$lib/BuildingSite/BuildingSite.svelte';
 </script>
 
-<div class="mt-4 w-[320px] h-[320px] mx-auto">
-    <DotLottieSvelte
-    src="{base}/building.json"
-    loop
-    autoplay
-    autoResizeCanvas={false}
-  />
-</div>
+<BuildingSite />
+
