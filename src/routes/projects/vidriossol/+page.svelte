@@ -3,7 +3,6 @@
     import { base } from '$app/paths';
 	  import { Images } from "$lib/svelte-images";
 	
-
     const images = [
       {
         src: `${base}/elsol/landing_page_sun_blur.png`
@@ -46,8 +45,10 @@
     height: 75vh;
   }
 </style>
-
-<h2 class="mb-8">Gallery</h2>
-<div class="p-4 gallery-container mb-16 flex justify-center content-center" >
-  <Images {images} numCols={2} />
+<div class="mx-auto max-w-[1020px]">
+  <div class="p-4 gallery-container pb-32 mb-16 flex-col justify-center content-center">
+    <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+    <p class="h-auto py-4 mb-4">A continuación, se presenta screenshots de las diferentes sesiones y flujos dentro de la app:</p>
+    <Images {images} numCols={2} />
+  </div>
 </div>

@@ -16,7 +16,7 @@
           url: `${base}/eHealth.jpg`, 
           path: `${base}/projects/android`,
           title:"Aplicación eHealth",
-          description: "Aplicación para agendamientos de citas médicas, telemedicina, consultas, mdicamentos y seguimiento de historias clínicas.",
+          description: "Aplicación para agendamientos de citas médicas, telemedicina, consultas, emdicamentos y seguimiento de historias clínicas.",
           technologies: [`${base}/java_logo_1.png`, `${base}/android_logo_1.png`, `${base}/kotlin_logo.png`]
         },
         { 
@@ -89,17 +89,17 @@
                 technologies: [`${base}/react_logo.png`]
             },
             {
-                url: `${base}/svelte_logo.png`,
-                path: `${base}/projects/portfolio`,
-                title: "Portfolio",
-                description: "Tecnología frontend en la cual esta implementado la actual pagina web que muestra mis propios trabajos.",
-                technologies: []
-            },
-            {
                 url: `${base}/next_logo.png`,
                 path: `${base}/projects/vidriossol`,
                 title: "Vidum",
                 description: "Servicio Api rest para la venta de marqueteria a medida con visualizacion del modelo 3D.",
+                technologies: []
+            },
+            {
+                url: `${base}/svelte_logo.png`,
+                path: `${base}/projects/portfolio`,
+                title: "Portfolio",
+                description: "Tecnología frontend en la cual esta implementado la actual pagina web que muestra mis propios trabajos.",
                 technologies: []
             },
         ]
@@ -107,8 +107,9 @@
 </script>
 
 
-<p class="text-2xl font-bold">Mobile Development</p>
-<div class="flex width-full justify-center mt-8 mx-auto">
+<div class="mx-8 max-w-[1020px]">
+    <p class="text-2xl font-bold">Mobile Development</p>
+    <div class="flex width-full justify-center mt-8 mx-auto">
     <Carousel {slides} 
               autoPlay={4}
               layout={{
@@ -187,8 +188,8 @@
     </Carousel>
 </div>
 
-<p class="text-2xl font-bold mt-16">Backend Development</p>
-<div class="flex width-full justify-center mt-8">
+  <p class="text-2xl font-bold mt-16">Backend Development</p>
+  <div class="flex width-full justify-center mt-8">
     <Carousel slides={slides2}
               autoPlay={5}
               layout={{
@@ -225,7 +226,9 @@
             </a>
         </div>    
     </Carousel>
+  </div>
 </div>
+
 
 <style lang="postcss">
     .logo_icon {
