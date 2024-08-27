@@ -46,7 +46,7 @@
             {
                 url: `${base}/elsol/logo_sol_trans.png`,
                 path: `${base}/projects/vidriossol`,
-                title: "VidriosSol",
+                title: "Vidum",
                 description: "Backend de aplicación para venta de marqueteria a medida con visualizacion del diseño en 3D.",
                 technologies: [ `${base}/next_logo.png`, `${base}/nodejs_icon.png`,] 
             },
@@ -75,31 +75,31 @@
 
     let slides3 = [
             {
-                url: `${base}/react_logo.png`,
-                path: `${base}/projects/domesticapp`,
-                title: "DomesticApp",
-                description: "Aplicación para solicitar servicios domesticos varios",
-                technologies: []
+                url: `${base}/eclinic.png`,
+                path: `${base}/projects/eclinicespecialisties`,
+                title: "eClinic",
+                description: "Servicio backend para api rest que emulaba un banco virtual para pagar los servicios domésticos",
+                technologies: [`${base}/vue_logo.png`,]
+            },
+            {
+                url: `${base}/eclinic.png`,
+                path: `${base}/projects/eclinicespecialisties`,
+                title: "eClinic Especialistas",
+                description: "Aplicación para solicitar servicios medicos y telemedicina.",
+                technologies: [`${base}/react_logo.png`]
             },
             {
                 url: `${base}/svelte_logo.png`,
                 path: `${base}/projects/portfolio`,
                 title: "Portfolio",
-                description: "Backend de aplicación para venta de marqueteria a medida con visualizacion del diseño en 3D.",
-                technologies: []
-            },
-            {
-                url: `${base}/vue_logo.png`,
-                path: `${base}/projects/eclinicespecialisties`,
-                title: "eClinic Especialistas",
-                description: "Servicio backend para api rest que emulaba un banco virtual para pagar los servicios domésticos",
+                description: "Tecnología frontend en la cual esta implementado la actual pagina web que muestra mis propios trabajos.",
                 technologies: []
             },
             {
                 url: `${base}/next_logo.png`,
-                path: `${base}/projects/vidrossol`,
-                title: "VidriosSol",
-                description: "Servicio backend para api rest que emulaba un banco virtual para pagar los servicios domésticos",
+                path: `${base}/projects/vidriossol`,
+                title: "Vidum",
+                description: "Servicio Api rest para la venta de marqueteria a medida con visualizacion del modelo 3D.",
                 technologies: []
             },
         ]
@@ -147,9 +147,9 @@
     </Carousel>
 </div>
 
-<p class="text-2xl font-bold mt-16">Backend Development</p>
-<div class="flex width-full justify-center">
-    <Carousel slides={slides2}
+<p class="text-2xl font-bold mt-16">Frontend Development</p>
+<div class="flex width-full justify-center mt-8">
+    <Carousel slides={slides3}
               autoPlay={5}
               layout={{
                 xs: 1,
@@ -187,9 +187,9 @@
     </Carousel>
 </div>
 
-<p class="text-2xl font-bold mt-16">Frontend Development</p>
-<div class="flex width-full justify-center">
-    <Carousel slides={slides3}
+<p class="text-2xl font-bold mt-16">Backend Development</p>
+<div class="flex width-full justify-center mt-8">
+    <Carousel slides={slides2}
               autoPlay={5}
               layout={{
                 xs: 1,

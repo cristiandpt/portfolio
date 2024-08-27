@@ -1,18 +1,44 @@
-
 <script>
-  import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
   import { base } from '$app/paths';
-</script>
+	import { Images } from "$lib/svelte-images";
 
-<!-- The creditt of the lottie animation: https://lottiefiles.com/  Free Building Page Animation -->
-<div class="mt-4 w-[320px] h-[320px] mx-auto">
-  <DotLottieSvelte
-  src="{base}/building.json"
-  loop
-  autoplay
-  autoResizeCanvas={false}
-/>
-<div class="mt-4 w-[320px] h-[320px] mx-auto font-bold text-center">
-I'm building this site rigth now. Be patient.
-</div>
+    const images = [
+      {
+        src: `${base}/specialitites/specialities.png`
+      },
+      {
+        src: `${base}/specialitites/specialites_2.png`
+      },
+      {
+        src: `${base}/specialitites/specialities_3.png`
+      },
+      {
+        src: `${base}/specialitites/specialities_8.png`
+      },
+      {
+        src: `${base}/specialitites/specialties_6.png`
+      },
+      {
+        src: `${base}/specialitites/specialties_10.png`
+      },
+      {
+        src: `${base}/specialitites/specilities_4.png`
+      },
+      {
+        src: `${base}/specialitites/specilities_5.png`
+    },
+    {
+        src: `${base}/specialitites/specilities_11.png`
+    },
+    {
+        src: `${base}/specialitites/specilities_12.png`
+    },
+    ];
+  </script>
+
+<div class="p-4 gallery-container pb-16">
+  <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+  <div class="p-4 gallery-container mb-16 flex justify-center content-center" >
+    <Images {images} numCols={2} />
+  </div>
 </div>
