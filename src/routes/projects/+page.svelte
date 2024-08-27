@@ -37,25 +37,25 @@
 
         let slides2 = [
             {
-                url: `${base}/golang_logo.png`,
+                url: `${base}/domesticapp/domesticapp_logo.png`,
                 path: `${base}/projects/domesticapp`,
                 title: "DomesticApp",
                 description: "Aplicación para solicitar servicios domesticos varios",
-                technologies: []
+                technologies: [ `${base}/golang_logo.png` ]
             },
             {
-                url: `${base}/nodejs_icon.png`,
+                url: `${base}/elsol/logo_sol_trans.png`,
                 path: `${base}/projects/vidriossol`,
                 title: "VidriosSol",
                 description: "Backend de aplicación para venta de marqueteria a medida con visualizacion del diseño en 3D.",
-                technologies: []
+                technologies: [ `${base}/next_logo.png`, `${base}/nodejs_icon.png`,] 
             },
             {
-                url: `${base}/rust_logo.svg`,
+                url: `${base}/domesticapp/domesticapp_logo.png`,
                 path: `${base}/projects/domesticapp`,
                 title: "DomesticApp",
                 description: "Servicio backend para api rest que emulaba un banco virtual para pagar los servicios domésticos",
-                technologies: []
+                technologies: [ `${base}/rust_logo.svg`]
             },
             {
                 url: `${base}/django_logo.png`,

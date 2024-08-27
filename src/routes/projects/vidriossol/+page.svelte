@@ -1,6 +1,5 @@
 
 <script>
-    import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
     import { base } from '$app/paths';
 	  import { Images } from "$lib/svelte-images";
 	
