@@ -76,9 +76,9 @@
     let slides3 = [
             {
                 url: `${base}/eclinic.png`,
-                path: `${base}/projects/eclinicespecialisties`,
+                path: `${base}/projects/eclinic`,
                 title: "eClinic",
-                description: "Servicio backend para api rest que emulaba un banco virtual para pagar los servicios domésticos",
+                description: "Servicio de medicina tanto para compañias, Clínicas, seguros como para personas",
                 technologies: [`${base}/vue_logo.png`,]
             },
             {
