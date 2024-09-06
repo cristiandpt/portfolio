@@ -10,7 +10,7 @@
 			title: `Kiosko de la salud`,
 			description:
 				'Cabina de atención médica en la cual se toman mediciones corporales de una persona a través de dispositivos IoT.',
-			technologies: [`${base}/android_logo_1.png`, `${base}/kotlin_logo.png`]
+			technologies: [`${base}/android_logo_96.png`, `${base}/kotlin_logo_96.png`]
 		},
 
 		{
@@ -20,9 +20,9 @@
 			description:
 				'Aplicación para agendamientos de citas médicas, telemedicina, consultas, emdicamentos y seguimiento de historias clínicas.',
 			technologies: [
-				`${base}/java_logo_1.png`,
-				`${base}/android_logo_1.png`,
-				`${base}/kotlin_logo.png`
+				`${base}/java_logo_96.png`,
+				`${base}/android_logo_96.png`,
+				`${base}/kotlin_logo_96.png`
 			]
 		},
 		{
@@ -31,7 +31,7 @@
 			title: `eClinic`,
 			description:
 				'Aplicación multiplataforma de telemedicina y monitoreo medico remoto. Se integra la conexión directa con dispositivos IoT.',
-			technologies: [`${base}/flutter_logo.png`]
+			technologies: [`${base}/flutter_logo_square.png`]
 		}
 		/*  { 
             url: `${base}/ionic_logo.png`, 
@@ -99,12 +99,12 @@
 			technologies: [`${base}/react_logo.png`]
 		},
 		{
-			url: `${base}/next_logo.png`,
+			url: `${base}/elsol/logo_sol_trans.png`,
 			path: `${base}/projects/vidriossol`,
 			title: 'Vidum',
 			description:
 				'Servicio Api rest para la venta de marqueteria a medida con visualizacion del modelo 3D.',
-			technologies: []
+			technologies: [`${base}/next_logo.png`]
 		},
 		{
 			url: `${base}/svelte_logo.png`,
@@ -139,13 +139,17 @@
 					<a href={slide.path}>
 						<Card title="" subtitle="">
 							<div class="flex justify-start">
-								<img class="logo_icon w-16 h-16 object-contain" src={slide.url} alt="logo" />
+								<img
+									class="logo_icon w-16 h-16 object-contain mt-1 rounded-xl"
+									src={slide.url}
+									alt="logo"
+								/>
 								<div>
 									<h3 class="ps-4 text-lg font-medium mb-2 text-gray-600">{slide.title}</h3>
 									<p class="ps-4 text-xs text-justify text-gray-800">{slide.description}</p>
 									<div class="flex justify-end mb-4 mt-1">
 										{#each slide.technologies as technology}
-											<img class="w-8 h-8 object-contain pe-2" src={technology} alt="logo-tech" />
+											<img class="h-8 w-auto pe-2 object-cover" src={technology} alt="logo-tech" />
 										{/each}
 									</div>
 								</div>
@@ -177,7 +181,7 @@
 						<Card title="" subtitle="">
 							<div class="flex justify-start">
 								<img
-									class="logo_icon w-16 h-16 object-contain"
+									class="logo_icon w-16 h-16 object-contain rounded-xl mt-1"
 									src={slide.url}
 									alt="logo-backend"
 								/>
@@ -217,13 +221,17 @@
 				<a href={slide.path}>
 					<Card title="" subtitle="">
 						<div class="flex justify-start">
-							<img class="logo_icon w-16 h-16 object-contain" src={slide.url} alt="logo-backend" />
+							<img
+								class="logo_icon object-contain rounded-xl mt-1"
+								src={slide.url}
+								alt="logo-backend"
+							/>
 							<div>
 								<h3 class="ps-4 text-lg font-medium mb-2 text-gray-600">{slide.title}</h3>
 								<p class="ps-4 text-xs text-justify text-gray-800">{slide.description}</p>
 								<div class="flex justify-end mb-4 mt-1">
 									{#each slide.technologies as technology}
-										<img class="w-8 h-8 object-contain pe-2" src={technology} alt="logo" />
+										<img class=" w-8 h-8 object-contain pe-2" src={technology} alt="logo" />
 									{/each}
 								</div>
 							</div>
@@ -237,7 +245,7 @@
 
 <style lang="postcss">
 	.logo_icon {
-		@apply w-20 h-auto;
+		@apply w-16 h-16;
 	}
 
 	.skill-section {
