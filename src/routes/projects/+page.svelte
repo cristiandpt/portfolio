@@ -117,7 +117,7 @@
 	];
 </script>
 
-<div class="max-w-[1020px] mx-8 mx-auto">
+o">
 	<div class="relative">
 		<p class="text-2xl font-bold">Mobile Development</p>
 		<div class="flex width-full justify-center mt-8 mx-auto">

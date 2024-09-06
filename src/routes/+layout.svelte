@@ -17,20 +17,10 @@
     }
   }
 
-</script>  
-
-<style lang="postcss">
- 
-  :global(html) {
-    @apply bg-[#f5f5f5];
-  }
-  .container {
-    @apply h-screen flex flex-col;
-  }
-</style>
+</script>
 
   <Header />
-  <main class={` max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
+  <main class={` max-w-screen-xl  ms-0  xl:mx-auto  p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
     <slot />
   </main>
   <Footer />

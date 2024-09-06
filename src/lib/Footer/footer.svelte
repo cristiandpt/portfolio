@@ -1,17 +1,28 @@
 <script>
 	import Heart from 'svelte-material-icons/Heart.svelte';
 	import Github from 'svelte-material-icons/Github.svelte';
+	import Linkedin from 'svelte-material-icons/Linkedin.svelte';
 </script>
 
 <footer id="footer" class="flex md:flex-row flex-col md:justify-between dark:bg-gray-800 p-2">
-	<div class="flex ps-4 items-center justify-center md:justify-start">
+	<div class="flex ps-8 items-center justify-center md:justify-start">
 		<p class="text-xs md:text-sm font-bold pe-1">Built with Svelte</p>
 		<Heart class="inline-block" size="1.5rem" color="red" />
+		<div class="ms-4 flex items-center">
+			<a href="https://www.linkedin.com/in/cristian-david-pacheco-torres-0859ba110/">
+				<Linkedin class="fill-black dark:fill-white" size="2.0rem" />
+			</a>
+			<a
+				class="text-xs font-bold"
+				href="https://www.linkedin.com/in/cristian-david-pacheco-torres-0859ba110/"
+				>Cristian David Pacheco Torres</a
+			>
+		</div>
 		<div class="ms-4 flex items-center">
 			<a href="https://github.com/cristiandpt">
 				<Github class="fill-black dark:fill-white" size="2.0rem" />
 			</a>
-			<a class="" href="https://github.com/cristiandpt">@cristiandpt</a>
+			<a class="text-xs font-bold" href="https://github.com/cristiandpt">@cristiandpt</a>
 		</div>
 	</div>
 	<div class="mx-0 px-8">

@@ -7,6 +7,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #f5f5f5;
 }
 
 .cp_carousel{
@@ -15,10 +16,15 @@
     align-items: end;
 }
 
-html, body {
-      overflow-x: hidden;
-      overflow-y: hidden; /* Disables vertical scrolling */
-      margin: 0;
+html, body {  
+      background-color: #f5f5f5;
       padding: 0;
       height: 100%;
-    }
+      overflow: hidden;
+}
+
+.portfolio-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

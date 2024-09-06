@@ -8,7 +8,7 @@
     }
 </script>
 
-<nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+<nav class="border-gray-200 px-4 sm:px-0 py-2.5 rounded dark:bg-gray-800">
     <div class="container mx-auto flex-row justify-between items-center">
         <div class="block lg:hidden rounded-lg">
           <button type="button" 
