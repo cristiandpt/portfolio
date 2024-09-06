@@ -107,12 +107,12 @@
 			technologies: [`${base}/next_logo.png`]
 		},
 		{
-			url: `${base}/svelte_logo.png`,
+			url: `${base}/cd_logo_rect_p_2.png`,
 			path: `${base}/projects/portfolio`,
 			title: 'Portfolio',
 			description:
 				'Tecnología frontend en la cual esta implementado la actual pagina web que muestra mis propios trabajos.',
-			technologies: []
+			technologies: [`${base}/svelte_logo.png`]
 		}
 	];
 </script>
