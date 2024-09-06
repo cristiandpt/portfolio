@@ -5,7 +5,7 @@
     const logo =  `${base}/cd_logo_rect_p.svg`;
 </script>
 
-<div class="flex width-full dark:bg-gray-800 justify-between p-8">
+<div class="flex width-full dark:bg-gray-800 justify-between p-8 pb-0">
     <a href="{base}/">
         <img src={logo} 
          alt="logo" 

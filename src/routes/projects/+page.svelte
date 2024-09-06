@@ -117,7 +117,7 @@
 	];
 </script>
 
-o">
+<div class="flex flex-col max-w-[1020px] mx-auto">
 	<div class="relative">
 		<p class="text-2xl font-bold">Mobile Development</p>
 		<div class="flex width-full justify-center mt-8 mx-auto">

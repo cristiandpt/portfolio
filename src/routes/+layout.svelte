@@ -19,8 +19,22 @@
 
 </script>
 
-  <Header />
-  <main class={` max-w-screen-xl  ms-0  xl:mx-auto  p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
-    <slot />
+<Header />
+<div class="relative overflow-hidden grow">
+  <main class={`content  max-w-screen-xl  ms-0  xl:mx-auto  p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
+      <slot />
   </main>
-  <Footer />
+</div>
+<Footer />
+
+<style>
+  .content {
+      height: 100%; 
+      overflow-y: scroll;
+      scrollbar-width: none; /* For Firefox */
+  }
+
+  .content::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+</style>

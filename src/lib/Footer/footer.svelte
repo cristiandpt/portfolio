@@ -4,7 +4,10 @@
 	import Linkedin from 'svelte-material-icons/Linkedin.svelte';
 </script>
 
-<footer id="footer" class="flex md:flex-row flex-col md:justify-between dark:bg-gray-800 p-2">
+<footer
+	id="footer"
+	class="transition-opacity transition-transform duration-500 opacity-0 transform translate-y-4 flex md:flex-row flex-col md:justify-between dark:bg-gray-800 p-2"
+>
 	<div class="flex ps-8 items-center justify-center md:justify-start">
 		<p class="text-xs md:text-sm font-bold pe-1">Built with Svelte</p>
 		<Heart class="inline-block" size="1.5rem" color="red" />

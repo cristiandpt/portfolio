@@ -5,6 +5,8 @@
 	import { base } from '$app/paths';
 	import { fade, scale } from 'svelte/transition';
 	import '@aarsteinmedia/dotlottie-player';
+	import { onMount } from 'svelte';
+	import { onDestroy } from 'svelte';
 
 	let writtenName = '';
 	let professionWriter = '';
@@ -12,6 +14,24 @@
 	let professionCharIndex = 0;
 	let isTyping = false;
 	let displayElementsCounter = 0;
+
+	onMount(() => {
+		const footer = document.getElementById('footer'); // Lookup by ID
+		if (footer) {
+			const footerStyle = footer.classList;
+			footerStyle.remove('opacity-0', 'translate-y-4');
+			footerStyle.add('opacity-100', 'translate-y-0');
+		}
+	});
+
+	onDestroy(() => {
+		const footer = document.getElementById('footer'); // Lookup by ID
+		if (footer) {
+			const footerStyle = footer.classList;
+			footerStyle.remove('opacity-100', 'translate-y-0');
+			footerStyle.add('opacity-0', 'translate-y-4');
+		}
+	});
 
 	$: {
 		if (nameCharIndex < myInfo.name.length) {
@@ -78,7 +98,7 @@
 			{#if displayElementsCounter === 3}
 				<p transition:fade|local|scale={{ duration: 500, start: 0.25 }}>
 					Visit my <a href="https://github.com/cristiandpt"><b>Github </b></a>repository for my
-					awesome works
+					works
 				</p>
 			{/if}
 		</div>
