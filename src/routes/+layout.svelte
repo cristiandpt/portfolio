@@ -24,17 +24,13 @@
   :global(html) {
     @apply bg-[#f5f5f5];
   }
-  :global(body) {
-    @apply overflow-y-auto;
-  }
   .container {
     @apply h-screen flex flex-col;
   }
 </style>
-<div class="">
+
   <Header />
-  <main class={`h-[90vh] max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
+  <main class={` max-w-screen-xl mx-auto p-4 ${$theme === 'dark' ? 'dark' : ''} `}>
     <slot />
   </main>
   <Footer />
-</div>

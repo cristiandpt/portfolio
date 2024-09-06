@@ -15,7 +15,10 @@
     align-items: end;
 }
 
-body {
-    height: 100vh;
-    overflow-y: auto;
-}
+html, body {
+      overflow-x: hidden;
+      overflow-y: hidden; /* Disables vertical scrolling */
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }

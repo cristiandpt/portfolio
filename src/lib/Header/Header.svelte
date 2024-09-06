@@ -1,6 +1,5 @@
 <script lang="ts">
     import NavBar from "$lib/NavBar/NavBar.svelte";
-    import Github from "svelte-material-icons/Github.svelte";
     import { base } from '$app/paths';
 
     const logo =  `${base}/cd_logo_rect_p.svg`;
@@ -13,10 +12,7 @@
          class="icon md:ms-4"
      />
     </a>
-     <div class="flex items-center">
-        <a href="https://github.com/cristiandpt">
-            <Github class="fill-black dark:fill-white" size="2.0rem"/>
-        </a>     
+     <div class="flex items-center"> 
         <NavBar />
      </div>
 </div>
