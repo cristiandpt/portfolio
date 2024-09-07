@@ -2,6 +2,7 @@
      import Menu from "svelte-material-icons/Menu.svelte";
   import { base } from '$app/paths';
 import LanguageSwitcher from '$lib/LanguageSwitcher/LanguageSwitcher.svelte';
+import { t } from 'svelte-i18n'
   
     let isOpen = false;
     
@@ -21,10 +22,10 @@ import LanguageSwitcher from '$lib/LanguageSwitcher/LanguageSwitcher.svelte';
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" class:hidden={!isOpen}>
           <div class="lg:flex-grow me-2">
-            <a href="{base}/" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">Home</a>
-            <a href="{base}/projects" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">Projects</a>
-            <a href="{base}/about" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">About</a>
-            <a href="{base}/contact" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 text-black dark:text-white hover:font-bold">Contact</a>
+            <a href="{base}/" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">{$t('nav.home', { default: 'Home' })}</a>
+            <a href="{base}/projects" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">{$t('nav.projects', { default: 'Projects' })}</a>
+            <a href="{base}/about" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 mr-4 text-black dark:text-white hover:font-bold">{$t('nav.about', { default: 'About' })}</a>
+            <a href="{base}/contact" class="hover:transition-all block mt-4 lg:inline-block lg:mt-0 text-black dark:text-white hover:font-bold">{$t('nav.contact', { default: 'Contact' })}</a>
           </div>
 	  <LanguageSwitcher />
         </div>

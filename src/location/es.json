@@ -1,5 +1,24 @@
 {
-  "page_title": "Título da página",
-  "sign_in": "Entrar",
-  "sign_up": "Registrar"
+  "title": "Desarrollador de Software",
+  "description_1": "Visita mi ",
+  "description_2": " para ver mis trabajos",
+  "skills": {
+    "android": "Android",
+    "apple": "Apple",
+    "flutter": "Flutter",
+    "spring": "Spring",
+    "golang": "Golang"
+  },
+  "footer": {
+    "builtWith": "Desarrollado con Svelte",
+    "allRightsReserved": "Todos los derechos reservados",
+    "linkedin": "Cristian David Pacheco Torres",
+    "github": "@cristiandpt"
+  },
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  }
 }

@@ -7,7 +7,7 @@
 	import '@aarsteinmedia/dotlottie-player';
 	import { onMount } from 'svelte';
 	import { onDestroy } from 'svelte';
-	import { _, locale } from 'svelte-i18n';
+	import { t } from 'svelte-i18n'
 
 	let writtenName = '';
 	let professionWriter = '';
@@ -75,10 +75,6 @@
 			}
 		}
 	}
-
-	const changeLanguage = (lang) => {
-		locale.set(lang);
-	};
 </script>
 
 <div class="relative overflow-hidden m-0 p-0">
@@ -102,8 +98,7 @@
 			</div>
 			{#if displayElementsCounter === 3}
 				<p transition:fade|local|scale={{ duration: 500, start: 0.25 }}>
-					Visit my <a href="https://github.com/cristiandpt"><b>Github </b></a>repository for my
-					works
+					{$t('description_1', { default: 'Visit my' })} <a href="https://github.com/cristiandpt"><b>Github</b></a> {$t('description_2', { default: 'Home' })}
 				</p>
 			{/if}
 		</div>

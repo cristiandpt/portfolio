@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { locale } from 'svelte-i18n';
 	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
@@ -10,15 +10,14 @@
 		isOpen = !isOpen;
 	};
 
-	const changeLanguage = (lang) => {
+	const changeLanguage = (lang: string) => {
 		locale.set(lang);
-		console.log(lang);
-		langs = lang === 'en' ? 'spain.png' : 'uk.jpg';
+		langs = lang === 'es' ? 'spain.png' : 'uk.jpg';
 		isOpen = false;
 	};
 
 	// Close dropdown if clicked outside
-	const handleClickOutside = (event) => {
+	const handleClickOutside = (event: any) => {
 		const dropdown = document.getElementById('dropdown-menu');
 		const button = document.getElementById('dropdown-button');
 
@@ -62,7 +61,7 @@
 	{#if isOpen}
 		<div
 			id="dropdown-menu"
-			class="origin-top-right absolute right-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+			class="origin-top-right absolute right-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-[10000]"
 		>
 			<div class="py-1">
 				<button
@@ -74,7 +73,7 @@
 				</button>
 				<button
 					class="flex items-center w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-					on:click={() => changeLanguaje('es')}
+					on:click={() => changeLanguage('es')}
 				>
 					<img src={`${base}/flags/spain.png`} alt="Español" class="w-6 h-6 rounded-full mr-2" />
 					Español
