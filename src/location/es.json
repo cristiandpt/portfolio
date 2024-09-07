@@ -24,5 +24,11 @@
   "about_me": {
     "title": "Sobre mí",
     "description": "Soy Cristian David Pacheco, un autodidacta con una pasión por la tecnología y una curiosidad que me impulsa a experimentar con cosas nuevas. Me encanta sumergirme en las últimas tendencias tecnológicas y descubrir cómo funcionan. Mis pasatiempos incluyen disfrutar de la comida deliciosa, viajar a nuevos lugares y sumergirme en libros, especialmente aquellos que profundizan en la filosofía. Explorar diferentes filosofías me ayuda a ampliar mi perspectiva y a entender el mundo de maneras únicas."
+  },
+  "contact": {
+    "contact_me": "Contáctame ",
+    "email": "Correo electrónico ",
+    "write_at": "Escríbame a ",
+    "find_me_linkedin": "Encuentrame en Linkedin como: "
   }
 }
