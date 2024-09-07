@@ -112,7 +112,7 @@
 			title: 'Portfolio',
 			description:
 				'Tecnología frontend en la cual esta implementado la actual pagina web que muestra mis propios trabajos.',
-			technologies: [`${base}/svelte_logo.png`]
+			technologies: [`${base}/svelte_logo_1.png`]
 		}
 	];
 </script>
@@ -185,12 +185,12 @@
 									src={slide.url}
 									alt="logo-backend"
 								/>
-								<div>
+								<div class="flex flex-col">
 									<h3 class="ps-4 text-lg font-medium mb-2 text-gray-600">{slide.title}</h3>
 									<p class="ps-4 text-xs text-justify text-gray-800">{slide.description}</p>
-									<div class="flex justify-end mb-4 mt-1">
+									<div class="flex flex-col justify-end mb-0 mt-1 items-end self-end grow">
 										{#each slide.technologies as technology}
-											<img class="w-8 h-8 object-contain pe-2" src={technology} alt="logo" />
+											<img class="w-10 h-10 object-contain pe-2" src={technology} alt="logo" />
 										{/each}
 									</div>
 								</div>
@@ -226,12 +226,12 @@
 								src={slide.url}
 								alt="logo-backend"
 							/>
-							<div>
+							<div class="flex flex-col">
 								<h3 class="ps-4 text-lg font-medium mb-2 text-gray-600">{slide.title}</h3>
 								<p class="ps-4 text-xs text-justify text-gray-800">{slide.description}</p>
-								<div class="flex justify-end mb-4 mt-1">
+								<div class="flex justify-end mt-1 justify-self-end my-0 items-end grow">
 									{#each slide.technologies as technology}
-										<img class=" w-8 h-8 object-contain pe-2" src={technology} alt="logo" />
+										<img class="w-9 h-9 object-contain pe-2" src={technology} alt="logo" />
 									{/each}
 								</div>
 							</div>
