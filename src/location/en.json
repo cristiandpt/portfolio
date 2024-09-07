@@ -20,5 +20,9 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact"
+  },
+  "about_me": {
+    "title": "About Me",
+    "description": "I'm Cristian David Pacheco, an autodidact with a passion for technology and a curiosity that drives me to experiment with new things. I love diving into the latest tech trends and figuring out how they work. My hobbies include savoring delicious food, traveling to new places, and immersing myself in books, especially those that delve into philosophy. Exploring different philosophies helps me broaden my perspective and understand the world in unique ways."
   }
 }
