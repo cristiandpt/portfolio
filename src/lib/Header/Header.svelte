@@ -13,7 +13,7 @@
      />
     </a>
      <div class="flex items-center"> 
-        <NavBar />
+       <NavBar />
      </div>
 </div>
 

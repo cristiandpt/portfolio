@@ -7,6 +7,7 @@
 	import '@aarsteinmedia/dotlottie-player';
 	import { onMount } from 'svelte';
 	import { onDestroy } from 'svelte';
+	import { _, locale } from 'svelte-i18n';
 
 	let writtenName = '';
 	let professionWriter = '';
@@ -74,6 +75,10 @@
 			}
 		}
 	}
+
+	const changeLanguage = (lang) => {
+		locale.set(lang);
+	};
 </script>
 
 <div class="relative overflow-hidden m-0 p-0">
